@@ -1,0 +1,274 @@
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+/* Styling the container */
+.container{
+    display:grid;
+    max-width: 960px;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    grid-gap:0.1rem;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.4fr 0.4fr 1fr 0.4fr 0.4fr 0.4fr;  
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    "left-txt left-txt left-txt right-txt right-txt right-txt"
+    "img-body img-body img-body img-body img-body img-body"
+    "icon-wifi icon-wifi icon-cafeteria icon-cafeteria icon-desktop icon-desktop"
+    "icon-lockers icon-lockers icon-secure icon-secure icon-printers icon-printers" 
+    "footer-part1 footer-part2 footer-part3 footer-part4 footer-part5 footer-part5"
+      
+}
+/* styling the navbar */
+nav { 
+    grid-area: nav; 
+    align-items: center;
+    padding: 20px 20px;
+}      
+/* styling the navabr menu */
+.menu {
+    padding: -10px 20px 0px 0px; 
+}
+/* styling the navbar  menu list */
+.menu-link {
+    padding: 0px 40px 0px 0px;
+    color: rgb(51, 51, 51);
+    font-size: 0.9rem;
+    margin-left: 220px;
+}
+/* styling the each item in the Navbar menu list */
+.link {
+    padding: 0 20px 0 0px;    
+} 
+/* styling the navbar  logo name */
+.navbar-name {
+    float: left;
+    height: 35px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 50px;  
+    margin-top: -10px; 
+}
+/* styling the navbar right side for contact number*/
+.menu-number {
+    float: right;
+    background-color: rgba(43, 128, 244, 255);
+    color: rgb(255, 255, 255);
+    padding: 5px; 
+    font-size: 0.9rem;   
+}
+/* Change the color of links on hover */
+.menu-link a:hover {    
+    color: rgba(43, 128, 244, 255);
+}
+/* Add a color to the active/current link */
+.menu-link a:active {    
+    color: rgba(233, 193, 15, 0);
+}
+
+/* styling the upper left-side text for container*/
+.left-txt {
+    grid-area:left-txt;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0px 10px 70px 40px ;
+    margin: 0;  
+    text-align: initial;  
+}   
+ /* styling the upper right-side text for container*/
+.right-txt{
+    grid-area: right-txt; 
+    font-size: 1rem;
+    font-weight: 160;   
+    padding: 0 10px 55px 40px;
+    margin: 0;
+    text-align: initial;
+    color: rgb(68, 67, 67);
+}
+/* styling the image for body section */
+#img-body {
+    grid-area: img-body;
+    margin: 60px 40px 20x 0;
+    max-width: auto;
+    height: auto;
+}
+/* styling the image according to screen size */
+#img-body img{    
+    max-width: auto;
+    height: auto;
+}
+/* styling the text on image */
+.img-txt {
+    position: absolute;
+    top: 257px;
+    left: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;   
+    padding: 120px 0px 0px 50px ; 
+    color: #fcf9f9;
+    text-align: initial;
+}
+/* styling the icon for Wifi part*/
+.icon-wifi {
+    grid-area: icon-wifi;
+    text-align: initial;   
+    font-size: 0.8rem;
+    font-weight: 200;   
+    padding: 0 0px 0 10px ; 
+    margin: 25px 10px 10px 10px;    
+}
+/* styling the icon for Cafeteria part*/
+.icon-cafeteria {
+    grid-area: icon-cafeteria;
+    text-align: initial;
+    font-size: 0.8rem;
+    font-weight: 200;   
+    padding: 0 0px 0 10px ; 
+    margin: 25px 10px 10px 10px; 
+}
+/* styling the icon for Desktop part*/
+.icon-desktop {
+    grid-area: icon-desktop;
+    text-align: initial;
+    font-size: 0.8rem;
+    font-weight: 200;   
+    padding: 0 0px 0 10px ; 
+    margin: 25px 10px 10px 10px;
+}
+/* styling the icon for Lockers part */
+.icon-lockers {
+    grid-area: icon-lockers;
+    text-align: initial;
+    font-size: 0.8rem;
+    font-weight: 200;   
+    padding: 0 0px 0 10px ; 
+    margin: 25px 10px 20px 10px;
+}
+/* styling the icon for Secure part */
+.icon-secure {
+    grid-area: icon-secure;
+    text-align: initial;
+    font-size: 0.8rem;
+    font-weight: 200;   
+    padding: 0 0px 0 10px ; 
+    margin: 25px 10px 20px 10px;
+}
+/* styling the icon for Printers part */
+.icon-printers {
+    grid-area: icon-printers;
+    text-align: initial;
+    font-size: 0.8rem;
+    font-weight: 200;   
+    padding: 0 0px 0 10px ; 
+    margin: 25px 10px 20px 10px;
+}
+/* styling the fas-fa icon  */
+.fas {
+    color:rgba(43, 128, 244, 255);
+   padding-bottom: 10px;
+}
+/* styling the header section for all icon part  */
+.icon-header-txt {
+    padding-bottom: 10px;
+}
+/* styling the footer part1 */
+.footer-part1 {
+    grid-area: footer-part1;
+    text-align: initial;
+    padding-top: 25px;
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin: 25px 10px 10px 20px;   
+}
+/* styling the footer part2 */
+.footer-part2 {
+    grid-area: footer-part2;
+    text-align: initial;
+    padding-top: 25px;
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin: 25px 10px 10px 20px; 
+}
+/* styling the footer part3 */
+.footer-part3 {
+    grid-area: footer-part3;
+    text-align: initial;
+    padding-top: 25px;    
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin: 15px 10px 10px 20px; 
+}
+/* styling the footer part4 */
+.footer-part4 {
+    grid-area: footer-part4;
+    text-align: initial;
+    padding-top: 25px;
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin: 30px 10px 10px 20px; 
+}
+/* styling the footer part5 */
+.footer-part5 {
+    grid-area: footer-part5;
+    text-align: initial;
+    padding-top: 25px;
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin: -10px 10px 10px 20px; 
+}
+/* styling the header for all footer part */
+.footer-header-txt {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: blue;
+    padding-bottom: 7px;
+}
+/* styling the list item for all footer header*/
+.link2 {
+    color: rgb(8, 92, 50);
+    padding-top: 5px;
+}
+/* styling the button for the last footer part5 */
+.footer-instagram-fetching {
+    font-size: 0.7rem;
+    color: rgb(31, 30, 30);
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(245, 217, 125);
+}
+/* styling the container according to media screen size */
+@media only screen and (max-width: 600px) {
+    .container {   
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 0.6fr 0.6fr 1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;  
+        grid-template-areas: 
+        "nav nav"
+        "left-txt right-txt"
+        "img-body img-body"
+        "icon-wifi icon-cafeteria" 
+        "icon-desktop icon-lockers" 
+        "icon-secure icon-printers" 
+        "footer-part1 footer-part2" 
+        "footer-part3 footer-part4"
+        "footer-part5 footer-part5"
+    }
+    #img-body {  
+        max-width: 450px;
+        min-width: 300px;
+        height: auto;   
+    }
+
+    .img-txt {
+        position: absolute;
+        top: 457px;
+        left: 50px;
+        font-size: 1.2rem;
+        font-weight: bold;   
+        padding: 100px 0px 0px 10px ; 
+        color: #fcf9f9;
+        text-align: initial;
+    }
+}
